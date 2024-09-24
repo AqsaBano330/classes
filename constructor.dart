@@ -1,5 +1,5 @@
 main(){
-Person obj = Person("Aqsa", 5, 45678);
+Person obj = Person(age: 5,salary:  45678);
 obj.personinfodisplay();
 obj.personinfoandsalary();
 obj.salarydisplay();
@@ -10,8 +10,8 @@ class Person{
   String? name;
   int? age;
   int? salary;
-
-  Person( this.name, this.age , this.salary){
+//default value constructor m store krni prti h 
+  Person( {this.name="Bano", this.age , this.salary}){
     print(name);
   }
   
